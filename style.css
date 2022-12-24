@@ -76,9 +76,10 @@ header .cabeçalho, a {
 .sale{
    display: flex;
    flex-direction:column;
-   width: 35%;
+   width: 320px;
    background: #EEEEEE;
    height:280px;
+   margin: 15px 0px 0px 10px;
 }
 
 .sale p{
@@ -91,9 +92,11 @@ header .cabeçalho, a {
 .new{
    display: flex;
    flex-direction:column;
-   width: 35%;
+   justify-content: center;
+   width: 320px;
    background: #EEEEEE;
    height:280px;
+   margin: 15px 0px 10px 0px;
 }
 
 .new p{
@@ -105,9 +108,11 @@ header .cabeçalho, a {
 
 .anuncio{
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    flex-wrap: wrap;
-   height:280px;
+   flex-direction: row-reverse;
+   width: 90%;
+   margin: auto;
 }
 
 .subtitulo{
@@ -116,35 +121,50 @@ header .cabeçalho, a {
    align-items: center;
    justify-content: center;
    height: 50px;
+   margin-top: 30px;
 }
 
 .triple{
    display: flex;
    align-items: center;
    flex-direction: column;
+   margin-Bottom: 50px;
 }
 
 .estilos{
    position: relative;
+   align-items: center;
    margin-top: 5px;
+   width: 90%
+
 }
 
 .estilos img{
+   position: relative;
    opacity: 0.35;
+   width: 100%; 
 }
+
 .estilos h2{
-   color: #FFFFFF;
    position: absolute;
-   left: 250px;  
-   bottom: 30px;
-   z-index: index 2; ;
+   color: #eeeeee;
+   align-items: center;
+   left: 42%;  
+   bottom: 35%;
+   z-index: index 2;
+   font-size: 4vw;
 }
 
 .rodape{
    background: #333333;
    display: flex;
    justify-content: space-around;
+   flex-wrap: wrap;
    padding: 30px 0px;
+}
+
+.mapa{
+   margin-top: 20px;
 }
 
 .contato{
@@ -158,9 +178,8 @@ header .cabeçalho, a {
 .information {
    align-items: center;
    display: block;
+   margin-top: 30px;
 }
-
-
 
 .icons ul li{
    display: inline-block;
@@ -168,3 +187,27 @@ header .cabeçalho, a {
    align-items: center;
 }
 
+@media (max-width: 725px){
+   .anuncio{
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      width: 330px;
+      align-items:center;
+   }
+   .sale{
+      width: 320px;
+      background: #EEEEEE;
+      height:280px;
+      margin-top: 20px;
+      margin-left: 0px;
+      align-items: center;
+   }
+   
+   .new{
+      width: 320px;
+      background: #EEEEEE;
+      height:280px;
+      margin-top: 15px;
+   }
+}
